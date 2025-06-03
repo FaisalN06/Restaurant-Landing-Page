@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header-section">
+        <div class="container">
+            <!-- Navbar Section -->
+            <nav>
+                <a href="index.html" class="navbar-brand"> <img src="./assets/logo 1.png" alt="company logo"></a>
+                <div class="nav-right">
+                    <div class="menu" id="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-collapse">
+                        <li><a href="" class="nav-links">Menu</a></li>
+                        <li><a href="" class="nav-links">Event</a></li>
+                        <li><a href="" class="nav-links">Gallery</a></li>
+                        <li><a href="" class="nav-links">About</a></li>
+                        <li><a href="" class="nav-links">Contact</a></li>
+                        <!-- Mobile Book a Table Button -->
+                        <li class="nav-btn-mobile">
+                            <a href="">Book a Table</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-btn"><a href="">Book a Table</a></div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Banner / Hero Section -->
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 sm-bnr-img">
+                    <div class="hero-img-wrpr-sm">
+                        <img src="./assets/Frame 1 (7).png" alt="Dining img" />
+                    </div>
+                </div>
+                <div class="col-6 hero-content">
+                    <h1 class="title1">
+                        We provide the best food for you
+                    </h1>
+                    <p class="hero-para">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="hero-btn">
+                        <a href="#" class="menu-btn">Menu</a>
+                        <a href="#" class="bokatbl">Book a table</a>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><span class="social-crl"><i class="fa-brands fa-facebook"></i></span></a>
+                        <a href="#"><span class="social-crl"><i class="fa-brands fa-instagram"></i></span></a>
+                        <a href="#"><span class="social-crl"><i class="fa-brands fa-twitter"></i></span></a>
+                    </div>
+                </div>
+                <div class="col-6 lg-bnr-img">
+                    <div class="hero-img-wrpr">
+                        <img src="./assets/Mask group (1).png" alt="" />
+                        <div class="bg-leaf"></div>
+                        <div class="bg-grass"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Special Dishes -->
+
+    <section class="special-dishes">
+        <div class="container">
+            <div class="row">
+                <h2>Our Special Dishes</h2>
+                <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt</p>
+                <!-- splide section -->
+
+                <div style="max-width : 1200px; margin : 0 auto;">
+                    <div class="splide" id="dish-carousel">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="dish-card">
+                                        <div class="dish-image">
+                                            <img src="./assets/dish-1 1.png" alt="Lumpia with Sauce">
+                                            <span class="price">$12</span>
+                                        </div>
+                                        <h3>Lumpia with Sauce</h3>
+                                        <p>Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="dish-card">
+                                        <div class="dish-image">
+                                            <img src="./assets/dish-3 1.png" alt="Fish and Veggie">
+                                            <span class="price">$12</span>
+                                        </div>
+                                        <h3>Fish and Veggie</h3>
+                                        <p>Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="dish-card">
+                                        <div class="dish-image">
+                                            <img src="./assets/dish-5.png" alt="Tofu Chili">
+                                            <span class="price">$12</span>
+                                        </div>
+                                        <h3>Tofu Chili</h3>
+                                        <p>Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="dish-card">
+                                        <div class="dish-image">
+                                            <img src="./assets/dish-4.png" alt="Egg and Cucumber">
+                                            <span class="price">$12</span>
+                                        </div>
+                                        <h3>Egg and Cucumber</h3>
+                                        <p>Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- welcome section -->
+
+                <div class="welcome">
+                    <div class="welcome-image">
+                        <img src="./assets/dish-2 2.png" alt="Delicious Dish">
+                    </div>
+                    <div class="welcome-text">
+                        <h2>Welcome to Our Restaurant</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua.</p>
+                        <div class="welcome-buttons">
+                            <a href="#" class="btn-dark">Menu</a>
+                            <a href="#" class="btn-orange">Book a table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+
+    <section class="chef-section">
+        <div class="container">
+            <div class="row">
+                <div class="chef-section">
+                    <div class="chef-content">
+                        <h2>Our Expert Chefs</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+
+                        <div class="chef-features">
+                            <ul>
+                                <li><img src="./assets/check.png" alt=""> Lorem ipsum dolor sit amet, consectetur</li>
+                                <li><img src="./assets/check.png" alt=""> Lorem ipsum dolor sit amet, consectetur</li>
+                                <li><img src="./assets/check.png" alt=""> Lorem ipsum dolor sit amet, consectetur</li>
+                            </ul>
+                            <ul>
+                                <li><img src="./assets/check.png" alt=""> Lorem ipsum dolor sit amet, consectetur</li>
+                                <li><img src="./assets/check.png" alt=""> Lorem ipsum dolor sit amet, consectetur</li>
+                                <li><img src="./assets/check.png" alt=""> Lorem ipsum dolor sit amet, consectetur</li>
+                            </ul>
+                        </div>
+
+                        <div class="chef-buttons">
+                            <a href="#" class="btn-dark">Menu</a>
+                            <a href="#" class="btn-orange">Book a table</a>
+                        </div>
+                    </div>
+
+                    <div class="chef-image">
+                        <img src="./assets/chef 1.png" alt="Chef">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Happy Coustomer Section -->
+
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="row">
+                <div class="testimonials-header">
+                    <h2>Our Happy Customers</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur<br>
+                        adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+
+                <div class="testimonials-container">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <img src="./assets/Mask group (2).png" alt="Customer 1" class="testimonial-img">
+                        <div class="testimonial-stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <p class="testimonial-text">
+                            Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit.
+                            Vitae congue ultrices neque penatibus mi in quisque.
+                            Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
+                            eu aliquam quis. Ornare tincidunt tempus semper
+                        </p>
+                        <h4 class="testimonial-name">Ama Ampomah</h4>
+                        <p class="testimonial-role">CEO & Founder Inc</p>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <img src="./assets/person-1.png" alt="Customer 2" class="testimonial-img">
+                        <div class="testimonial-stars">
+                            ⭐⭐⭐
+                        </div>
+                        <p class="testimonial-text">
+                            Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit.
+                            Vitae congue ultrices neque penatibus mi in quisque.
+                            Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
+                            eu aliquam quis. Ornare tincidunt tempus semper
+                        </p>
+                        <h4 class="testimonial-name">Kweku Annan</h4>
+                        <p class="testimonial-role">CEO & Founder Inc</p>
+                    </div>
+                </div>
+                <div style="margin-top: 70px;">
+                    <img src="./assets/Dot.png" alt="dot">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter section -->
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row">
+                <div class="newsletter-content">
+                    <h2>Get a Promo Code by <br> Subscribing to our Newsletter</h2>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" id="emailInput" placeholder="Enter your email" required />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <p id="formMessage" class="form-message"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-top">
+                    <div class="footer-about">
+                        <div class="logo"><img src="./assets/logo 1.png" alt=""></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore.</p>
+                        <a href="#" style="text-decoration: none; color: gray">Learn more</a>
+                        <div class="hours">
+                            <h5>Opening Hours</h5>
+                            <p>Monday - Friday: 8:00 am to 9:00 pm</p>
+                            <p>Saturday: 8:00 am to 9:00 pm</p>
+                            <p>Sunday: CLOSED</p>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <div>
+                            <h5>Navigation</h5>
+                            <ul>
+                                <li><a href="#">Menu</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Main Dishes</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>Dishes</h5>
+                            <ul>
+                                <li><a href="#">Fish & Veggies</a></li>
+                                <li><a href="#">Tofu Chili</a></li>
+                                <li><a href="#">Egg & Cucumber</a></li>
+                                <li><a href="#">Lumpia w/Sauce</a></li>
+                            </ul>
+                        </div>
+                        <div class="social">
+                            <h5>Follow Us</h5>
+                            <div class="socials">
+                                <a href="#"><span class="social-crl"><i class="fa-brands fa-facebook"></i></span></a>
+                                <a href="#"><span class="social-crl"><i class="fa-brands fa-instagram"></i></span></a>
+                                <a href="#"><span class="social-crl"><i class="fa-brands fa-twitter"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2022 Restaurants. All Rights Reserved. Designed by <strong>Isaac</strong></p>
+                    <div class="policy-links">
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src=".js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+</body>
+
+</html>
