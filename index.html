@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Landing Page</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- font awsome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Splide CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
 </head>
 
 <body>
@@ -39,7 +42,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="nav-btn"><a href="">Book a Table</a></div>
+                <div class="nav-btn"><a href="#">Book a Table</a></div>
             </nav>
         </div>
     </header>
@@ -75,7 +78,7 @@
                 </div>
                 <div class="col-6 lg-bnr-img">
                     <div class="hero-img-wrpr">
-                        <img src="./assets/Mask group (1).png" alt="" />
+                        <img src="./assets/Mask group (1).png" alt="food" />
                         <div class="bg-leaf"></div>
                         <div class="bg-grass"></div>
                     </div>
@@ -221,57 +224,51 @@
 
     <!-- Happy Coustomer Section -->
 
+
     <section class="testimonials-section">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-centre">
-                    <div class="testimonials-header">
-                        <h2>Our Happy Customers</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur<br>
-                            adipiscing elit, sed do eiusmod tempor incididunt</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="testimonials-container">
+            <div class="testimonials-header">
+                <h2>Our Happy Customers</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+
+            <!-- Splide Slider -->
+            <div id="testimonial-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+
                         <!-- Testimonial 1 -->
-                        <div class="testimonial-card">
-                            <img src="./assets/Mask group (2).png" alt="Customer 1" class="testimonial-img">
-                            <div class="testimonial-stars">
-                                ⭐⭐⭐⭐⭐
+                        <li class="splide__slide">
+                            <div class="testimonial-card">
+                                <img src="./assets/Mask group (2).png" alt="Customer 1" class="testimonial-img">
+                                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur. Tortor massa nisl
+                                    quam sit...</p>
+                                <h4 class="testimonial-name">Ama Ampomah</h4>
+                                <p class="testimonial-role">CEO & Founder Inc</p>
                             </div>
-                            <p class="testimonial-text">
-                                Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit.
-                                Vitae congue ultrices neque penatibus mi in quisque.
-                                Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
-                                eu aliquam quis. Ornare tincidunt tempus semper
-                            </p>
-                            <h4 class="testimonial-name">Ama Ampomah</h4>
-                            <p class="testimonial-role">CEO & Founder Inc</p>
-                        </div>
+                        </li>
 
                         <!-- Testimonial 2 -->
-                        <div class="testimonial-card">
-                            <img src="./assets/person-1.png" alt="Customer 2" class="testimonial-img">
-                            <div class="testimonial-stars">
-                                ⭐⭐⭐
+                        <li class="splide__slide">
+                            <div class="testimonial-card">
+                                <img src="./assets/person-1.png" alt="Customer 2" class="testimonial-img">
+                                <div class="testimonial-stars">⭐⭐⭐</div>
+                                <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur. Tortor massa nisl
+                                    quam sit...</p>
+                                <h4 class="testimonial-name">Kweku Annan</h4>
+                                <p class="testimonial-role">CEO & Founder Inc</p>
                             </div>
-                            <p class="testimonial-text">
-                                Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit.
-                                Vitae congue ultrices neque penatibus mi in quisque.
-                                Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
-                                eu aliquam quis. Ornare tincidunt tempus semper
-                            </p>
-                            <h4 class="testimonial-name">Kweku Annan</h4>
-                            <p class="testimonial-role">CEO & Founder Inc</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 text-center" style="margin-top: 70px;">
-                    <img src="./assets/Dot.png" alt="dot">
+                        </li>
+
+                        <!-- Add more slides if needed -->
+
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Newsletter section -->
 
@@ -296,24 +293,29 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="footer-top">
-                    <div class="footer-about">
-                        <div class="logo"><img src="./assets/logo 1.png" alt=""></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore.</p>
-                        <a href="#" style="text-decoration: none; color: gray">Learn more</a>
-                        <div class="hours">
-                            <h5>Opening Hours</h5>
-                            <p>Monday - Friday: 8:00 am to 9:00 pm</p>
-                            <p>Saturday: 8:00 am to 9:00 pm</p>
-                            <p>Sunday: CLOSED</p>
+            <div class="footer-top">
+                <div class="footer-top-row">
+                    <!-- Column 1: About -->
+                    <div class="footer-top-col footer-top-col-1">
+                        <div class="footer-about">
+                            <a href="index.html" class="logo">
+                                <img src="./assets/logo 1.png" alt="Restaurant Logo">
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore.</p>
+                            <a href="#" style="text-decoration: none; color: gray;">Learn more</a>
+                            <div class="hours">
+                                <h5>Opening Hours</h5>
+                                <p>Monday - Friday: 8:00 am to 9:00 pm</p>
+                                <p>Saturday: 8:00 am to 9:00 pm</p>
+                                <p>Sunday: CLOSED</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="footer-links">
-                        <div>
+                    <!-- Column 2: Navigation Links -->
+                    <div class="footer-top-col footer-top-col-2">
+                        <div class="footer-links">
                             <h5>Navigation</h5>
                             <ul>
                                 <li><a href="#">Menu</a></li>
@@ -322,7 +324,11 @@
                                 <li><a href="#">Main Dishes</a></li>
                             </ul>
                         </div>
-                        <div>
+                    </div>
+
+                    <!-- Column 3: Dishes -->
+                    <div class="footer-top-col footer-top-col-3">
+                        <div class="footer-links">
                             <h5>Dishes</h5>
                             <ul>
                                 <li><a href="#">Fish & Veggies</a></li>
@@ -331,6 +337,10 @@
                                 <li><a href="#">Lumpia w/Sauce</a></li>
                             </ul>
                         </div>
+                    </div>
+
+                    <!-- Column 4: Social Media -->
+                    <div class="footer-top-col footer-top-col-4">
                         <div class="social">
                             <h5>Follow Us</h5>
                             <div class="socials">
@@ -341,20 +351,23 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="footer-bottom">
-                    <p>© 2022 Restaurants. All Rights Reserved. Designed by <strong>Isaac</strong></p>
-                    <div class="policy-links">
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Privacy Policy</a>
-                    </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>© 2022 Restaurants. All Rights Reserved. Designed by <strong>Isaac</strong></p>
+                <div class="policy-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </footer>
 
+
     <script src=".js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </body>
 
 </html>

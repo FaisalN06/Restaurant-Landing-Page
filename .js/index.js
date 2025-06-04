@@ -49,3 +49,22 @@ document.getElementById("newsletterForm").addEventListener("submit", function (e
         document.getElementById("emailInput").value = "";
     }
 });
+
+// testimonial splide 
+
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#testimonial-slider', {
+        type: 'loop',
+        autoplay: true,
+        drag: true,
+        perPage: 2,
+        arrows: false,
+        gap: '40px',
+        autoplay: true,
+        breakpoints: {
+            768: {
+                perPage: 1
+            }
+        }
+    }).mount();
+});
